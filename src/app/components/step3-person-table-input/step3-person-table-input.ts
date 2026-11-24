@@ -8,5 +8,5 @@ import { Person } from '../../shared/interfaces/person';
   templateUrl: './step3-person-table-input.html',
 })
 export class Step3PersonTableInput {
-  @Input() person: Person | undefined;
+  @Input() person: Person | undefined
 }

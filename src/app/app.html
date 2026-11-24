@@ -1,6 +1,6 @@
 <div class="container mt-4">
   <div class="d-flex gap-5 align-items-center">
-    <div class="bg-info p-2">
+  <div class="bg-info p-2">
       <h1>Coding Factory</h1>
       <h2>Introduction to Angular</h2>
     </div>
@@ -14,27 +14,51 @@
 <div class="container mt-4">
   <h3>From App Component</h3>
   <p>
-    Hello <strong>{{ name }}</strong>
+    Hello <strong>{{name}}</strong>
   </p>
 
   <table class="table table-bordered w-50">
-    <tbody>
-      <tr>
-        <td class="fw-semibold">First Name</td>
-        <td class="ps-2">{{ user.firstname }}</td>
-      </tr>
-      <tr>
-        <td class="fw-semibold">Last Name</td>
-        <td class="ps-2">{{ user.lastname }}</td>
-      </tr>
-      <tr>
-        <td class="fw-semibold">Email</td>
-        <td class="ps-2">{{ user.email }}</td>
-      </tr>
-    </tbody>
+    <tr>
+      <td class="fw-semibold">First Name</td>
+      <td class="ps-2">{{user.firstname}}</td>
+    </tr>
+    <tr>
+      <td class="fw-semibold">Last Name</td>
+      <td class="ps-2">{{user.lastname}}</td>
+    </tr>
+    <tr>
+      <td class="fw-semibold">Email</td>
+      <td class="ps-2">{{user.email}}</td>
+    </tr>
   </table>
 </div>
+
 <!-- Add child step2-person-table -->
-<div class="container mt-2" bg-info>
+ <div class="container mt-2 bg-info">
   <app-step2-person-table></app-step2-person-table>
+  <app-step2-person-table></app-step2-person-table>
+ </div>
+
+ <hr>
+ <!-- Add child step3-person-table-input  -->
+ 
+ <div class="container mt-2 bg-success">
+  <app-step3-person-table-input [person]="person1"></app-step3-person-table-input>
+  <app-step3-person-table-input></app-step3-person-table-input>
+  <app-step3-person-table-input [person]="person2"></app-step3-person-table-input>
+ </div>
+<!-- Add child step4-person-table-output  -->
+ <div class="container mt-2">
+  <h3>From Step4 Component</h3>
+  <app-step4-person-table-output></app-step4-person-table-output>
+ </div>
+
+ <!-- Add child Step5 Person output -->
+<div class="container">
+  <h3>From Step5 Component</h3>
+  <app-step5-person-output></app-step5-person-output>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
 </div>

@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './step5-person-output.css',
   templateUrl: './step5-person-output.html',
 })
-export class Step5PersonOutput {}
+export class Step5PersonOutput {
+  times: number = 0;
+
+  incrementTimes() {
+    this.times++;
+  }
+
+  decrementTimes() {
+    this.times--;
+  }
+}
