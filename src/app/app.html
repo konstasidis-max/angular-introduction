@@ -1,3 +1,4 @@
+@if(!doNotShowRest) {
 <div class="container mt-4">
   <div class="d-flex gap-5 align-items-center">
   <div class="bg-info p-2">
@@ -62,3 +63,8 @@
 <div>
   <router-outlet></router-outlet>
 </div>
+} @else {
+  <div class="container mt-2">
+    <router-outlet></router-outlet>
+  </div>
+}

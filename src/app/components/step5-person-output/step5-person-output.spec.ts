@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Step5EventBind } from './step5-event-bind';
+import { Step5PersonOutput } from './step5-person-output';
 
-describe('Step5EventBind', () => {
-  let component: Step5EventBind;
-  let fixture: ComponentFixture<Step5EventBind>;
+describe('Step5PersonOutput', () => {
+  let component: Step5PersonOutput;
+  let fixture: ComponentFixture<Step5PersonOutput>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Step5EventBind],
+      imports: [Step5PersonOutput],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Step5EventBind);
+    fixture = TestBed.createComponent(Step5PersonOutput);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

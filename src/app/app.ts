@@ -6,6 +6,7 @@ import { Step3PersonTableInput } from './components/step3-person-table-input/ste
 import { Step4PersonTableOutput } from './components/step4-person-table-output/step4-person-table-output';
 import { Step5PersonOutput } from './components/step5-person-output/step5-person-output';
 import { Person } from './shared/interfaces/person';
+import { Navbar } from './components/navbar/navbar';
 
 
 @Component({
@@ -14,7 +15,8 @@ import { Person } from './shared/interfaces/person';
     Step3PersonTableInput,
     Step4PersonTableOutput,
     Step5PersonOutput,
-    RouterOutlet
+    RouterOutlet,
+    Navbar
   ],
   selector: 'app-root',
   styleUrl: './app.css',
@@ -24,6 +26,7 @@ export class App {
   protected readonly title = signal('angular-introduction');
   // Step 1 One way Binding
   name = 'Markos'
+  doNotShowRest: boolean = true;
 
   user = {
     firstname: "Bob",
