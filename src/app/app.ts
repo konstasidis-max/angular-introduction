@@ -7,6 +7,7 @@ import { Step4PersonTableOutput } from './components/step4-person-table-output/s
 import { Step5PersonOutput } from './components/step5-person-output/step5-person-output';
 import { Person } from './shared/interfaces/person';
 import { Navbar } from './components/navbar/navbar';
+import { Step7ListGroupMenu } from './components/step7-list-group-menu/step7-list-group-menu';
 
 
 @Component({
@@ -16,8 +17,9 @@ import { Navbar } from './components/navbar/navbar';
     Step4PersonTableOutput,
     Step5PersonOutput,
     RouterOutlet,
-    Navbar
-  ],
+    Navbar,
+    Step7ListGroupMenu
+],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

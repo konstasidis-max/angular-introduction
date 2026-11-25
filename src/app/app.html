@@ -48,13 +48,14 @@
   <app-step3-person-table-input></app-step3-person-table-input>
   <app-step3-person-table-input [person]="person2"></app-step3-person-table-input>
  </div>
-<!-- Add child step4-person-table-output  -->
+
+ <!-- Add child step4-for-directive  -->
  <div class="container mt-2">
   <h3>From Step4 Component</h3>
   <app-step4-person-table-output></app-step4-person-table-output>
  </div>
 
- <!-- Add child Step5 Person output -->
+ <!-- Add child Step5 Event bind -->
 <div class="container">
   <h3>From Step5 Component</h3>
   <app-step5-person-output></app-step5-person-output>
@@ -64,7 +65,13 @@
   <router-outlet></router-outlet>
 </div>
 } @else {
-  <div class="container mt-2">
-    <router-outlet></router-outlet>
+<div class="container mt-2">
+  <app-navbar></app-navbar>
+  <div class="d-flex flex-row gap-2 mt-2">
+    <app-step7-list-group-menu class="w-25"></app-step7-list-group-menu>
+    <div class="flex-grow-1 p-2 w-75">
+      <router-outlet></router-outlet>
+    </div>
   </div>
+</div>
 }
